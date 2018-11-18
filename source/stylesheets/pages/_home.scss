@@ -1,5 +1,4 @@
 #home {
-  background-color: #D23333;
   color: white;
   height: 100vh;
   display: flex;
@@ -15,3 +14,79 @@
     font-size: 16px;
   }
 }
+
+body{
+  font-family: 'Alegreya', serif;
+  max-width: 100vw;
+  & h1{
+    font-family: 'Roboto Mono', monospace;
+  }
+  & h2 {
+    font-family: 'Alegreya', serif;
+  }
+  & h4 {
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.padding-40{
+  padding: 40px;
+}
+
+.padding-140{
+  padding: 140px;
+}
+
+.vertical-center{
+  vertical-align: center
+}
+
+.full-div{
+  min-width: 100%;
+  min-height: 100%
+}
+
+.title{
+  padding: 20px;
+  & h1{
+    font-size: 30px;
+  }
+}
+
+.banner-img img{
+  max-width: 100%
+}
+
+.half-pg-p{
+  padding: 15px;
+}
+
+.action h1 {
+  font-size: 21px;
+}
+
+.mid-img {
+  width: 60%;
+  height: 40%
+}
+
+.background-square{
+  background-color: $light-gray;
+  padding: 80px;
+  width: 40%;
+}
+
+.section{
+  display: flex;
+}
+
+.quote h4{
+  font-family:'Alegreya', serif;
+}
+
+
