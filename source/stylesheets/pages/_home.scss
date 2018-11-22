@@ -24,6 +24,9 @@ body{
   & h2 {
     font-family: 'Alegreya', serif;
   }
+  & h3 {
+    font-family: 'Alegreya', serif;
+  }
   & h4 {
     font-family: 'Roboto Mono', monospace;
   }
@@ -34,6 +37,10 @@ body{
   justify-content: space-between;
 }
 
+.padding-20{
+  padding: 20px;
+}
+
 .padding-40{
   padding: 40px;
 }
@@ -42,8 +49,9 @@ body{
   padding: 140px;
 }
 
-.vertical-center{
-  vertical-align: center
+.home-btn{
+  vertical-align: middle;
+  display: flex-root
 }
 
 .full-div{
@@ -59,10 +67,19 @@ body{
 }
 
 .banner-img img{
-  max-width: 100%
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+
+.call-to-action{
+  display: flex;
+  // justify-content: center;
+  // margin: 0 auto;
+  padding: 40px 0px;
 }
 
-.half-pg-p{
+.padding-15{
   padding: 15px;
 }
 

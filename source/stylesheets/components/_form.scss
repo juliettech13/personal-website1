@@ -19,16 +19,21 @@ form {
   max-width: 425px;
   width: 100%;
   position: relative;
-  padding: 2em 0 6em 0;
-  margin: 2em;
+
+  // margin: 2em;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  // margin-botom: 2%;
 }
 .field {
   width: 100%;
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 2%;
+}
+
+.last {
+  margin: 6%;
 }
 input {
   color: $gray;
@@ -61,15 +66,18 @@ label {
 //   color: #8277ff;
 // }
 label {
-  font-size: 1em;
+  font-size: 2%;
   transition: all 0.35s ease-in-out;
 }
 input {
   width: 100%;
-  padding: 1em 0.75em 1em 0.75em;
+  padding: 8% 0.75em 1em 0.75em;
   background-color: transparent;
   border: none;
-  border-bottom: 0.1em solid $pink
+  border-bottom: 0.1em solid $pink;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 input:focus, button:focus {
   outline: none;
