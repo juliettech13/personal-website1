@@ -1,0 +1,26 @@
+.btn {
+  border-color: $pink;
+  font-family: 'Roboto Mono';
+  border-radius: 5px;
+  text-transform: uppercase;
+  &:hover{
+    background-color: $light-blue;
+    color: $pink;
+    transition: ease 1.5s;
+  }
+}
+
+.btn-primary{
+  background-color: $pink;
+  color:$light-blue;
+}
+
+.btn-secondary{
+  background-color: $light-blue;
+  color: $pink;
+  &:hover{
+    background-color: $pink;
+    color: $light-blue;
+     transition: ease 1.5s;
+  }
+}
