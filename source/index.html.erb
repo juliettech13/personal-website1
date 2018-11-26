@@ -6,15 +6,16 @@ title: juliet_tech
   <div class="title text-center">
     <h1>&lt;/juliet_tech&gt;</h1>
   </div>
+  <%#= partial "components/_title.html.erb" %>
 
   <div class="row">
     <div class="col-xs-12 banner-img">
       <%= image_tag "Le_wagon_Bali-Demo_Day-81.jpg" %>
     </div>
   </div>
-  <div class="row">
-    <div class="call-to-action flex padding-15">
-      <div class="col-xs-12 col-md-6">
+  <div class="row call-to-action">
+    <div class="flex padding-15">
+      <div class="col-xs-12 col-md-8">
         <p>Here is a description of your company. Pellentesque habitant morbi tristique senectus et netus malesuada fames. Ullamcorper turpis, nec convallis metus nunc vel turpis. Augue justo ullamcorper turpis, nec convallis metus nunc vel turpis.</p>
       </div>
       <div class="col-xs-12 col-md-3 col-md-offset-1 home-btn">
@@ -24,8 +25,8 @@ title: juliet_tech
       </div>
     </div>
   </div>
-  <div class="what-i-do">
-    <div class="row">
+  <!-- <div class="what-i-do"> -->
+    <div class="row what-i-do">
       <div class="col-xs-12 col-lg-4 action padding-40">
         <div class="svg"><!-- /.svg text-center -->
           <%= partial "components/_keyboard.html.erb" %>
@@ -45,12 +46,21 @@ title: juliet_tech
         <a href="#">See All Writings</a>
       </div>
       <div class="col-xs-12 col-lg-4 action padding-40">
+    <!--     <div class="livicon-evo" data-options="
+          name: bell.svg;
+          size: 120px;
+          style: original;
+          tryToSharpen: true
+      "></div> -->
+        <div class="svg">
+            <%= partial "components/_keyboard.html.erb" %>
+        </div>
         <h1>TRAVEL</h1>
         <p>Description text. Ullamcorper turpis, nec convallis metus nunc vel turpis. Augue justo ullamcorper turpis, nec convallis metus nunc vel turpis. Donec eu ornare augue, ut efficitur velit.</p>
         <a href="#">See All Adventures</a>
       </div>
     </div>
-  </div>
+<!--   </div> -->
   <div class="section">
     <%= image_tag "world.jpg", class: "mid-img" %>
     <div class="background-square">

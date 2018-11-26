@@ -11,87 +11,19 @@
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/ball.jpeg' %>
     <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700|Roboto+Mono:300,400,500" rel="stylesheet">
+    <%= stylesheet_link_tag "../../LivIconsEvo/css/LivIconsEvo.css" %>
+    <!-- <link href="LivIconsEvo/css/LivIconsEvo.css" rel="stylesheet"> -->
   </head>
   <body>
     <!-- NAVBAR -->
-    <div class="navbar-wagon">
-      <!-- Logo -->
-        <div class="navbar-wagon-item">
-          <div class="dropdown">
-            <div class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-              <i class="fas fa-bars"></i>
-              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Log Out</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <a href="/" class="navbar-wagon-brand">
-          <img src="images/ball.jpeg" alt="logo">
-        </a>
-      <!-- Right Navigation -->
-     <!--  <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Host</a>
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Trips</a>
-        <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a> -->
-        <!-- Profile picture with dropdown list -->
-      <!-- Dropdown appearing on mobile only -->
-      <!-- <div class="navbar-wagon-item hidden-md hidden-lg">
-        <div class="dropdown">
-          <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li><a href="#">Host</a></li>
-            <li><a href="#">Trips</a></li>
-            <li><a href="#">Messagese</a></li>
-          </ul>
-        </div>
-      </div> -->
-      </div>
-    </div>
+    <%= partial "../source/components/navbar.html.erb" %>
     <%= yield %>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-lg-6 padding-20">
-            <h3>Let's collaborate 🔥</h3>
-            <p>Description text. Proin gravida ex id consectetur lobortis. Aliquam ornare, velit vel faucibus dapibus, augue justo ullamcorper turpis.</p>
-            <div class="footer-links">
-              <a href="https://github.com/juliettech13"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-medium"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-lg-6">
-            <!-- <header> -->
-              <form action="" method="post">
-                <div class="field">
-                  <input type="text" id="user" placeholder="Full name" autocomplete="off">
-                  <!-- <label for="user">Full name</label> -->
-                </div>
-                <div class="field">
-                  <input type="email" id="e-mail" placeholder="E-mail" autocomplete="off">
-                 <!--  <label for="e-mail">e-mail</label> -->
-                </div>
-                <div class="field last">
-                  <input type="text" id="name" placeholder="Tell me about you" autocomplete="off">
-                  <!-- <label for="name">What's up?</label> -->
-                </div>
-                <button type="submit" class="btn btn-primary">contact me</button>
-              </form>
-            <!-- </header> -->
-
-          </div>
-        </div>
-      <!-- <div class="footer-copyright">
-        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-      </div> -->
-      </div>
-    </div>
-
+    <%= partial "../source/components/footer.html.erb" %>
+  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> -->
+    <!-- LivIcons animation js -->
+    <script src="../../LivIconsEvo/js/LivIconsEvo.Tools.js"></script>
+    <script src="../../LivIconsEvo/js/LivIconsEvo.defaults.js"></script>
+    <script src="../../LivIconsEvo/js/LivIconsEvo.min.js"></script>
   </body>
 </html>
